@@ -7,5 +7,7 @@ scipy==0.18.1
 scikit-learn==0.18.1
 matplotlib==1.5.3
 
+tabulate==0.7.7
+
 # To read Excel files
 xlrd==1.0.0
