@@ -7,7 +7,19 @@ scipy==0.18.1
 scikit-learn==0.18.1
 matplotlib==1.5.3
 
+#Visualization
+bokeh==0.12.4
+seaborn==0.7.1
 tabulate==0.7.7
 
 # To read Excel files
 xlrd==1.0.0
+
+
+
+# For the deploying Python models as an API workshop
+joblib==0.10.3
+Flask==0.12
+gunicorn==19.6.0
+gevent==1.2.1
+celery[redis]==4.0.2
