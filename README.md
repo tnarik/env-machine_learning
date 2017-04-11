@@ -44,6 +44,19 @@ This would be needed, for instance, on macOS.
 echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 ```
 
+### Extensions
+
+After installing the contributed notebook extensions (from `jupyter_contrib_nbextensions`), they need to be copied to the system:
+
+`jupyter contrib nbextension install --sys-prefix`
+
+With this they will be available via the internal extension configuration tab. Or use the command line:
+
+```
+jupyter nbextension enable hide_header/main
+jupyter nbextension enable freeze/main
+```
+
 ## Issues
 
 ### Possible with `python3`
