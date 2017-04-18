@@ -20,7 +20,8 @@ mlxtend==0.5.1
 
 # NLP
 nltk==3.2.2
-gensim==1.0.1
+Pyro4==4.57 # For distributed LSI/LDA
+gensim==2.0.0
 
 #Visualization
 bokeh==0.12.4
