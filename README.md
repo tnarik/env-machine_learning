@@ -35,6 +35,10 @@ export OPENBLAS=$(brew --prefix openblas)/lib
 pip install numpy -U --force-reinstall --no-cache-dir --no-binary :all:
 ```
 
+You can check the installation via:
+
+`python -c "import numpy; print(numpy.show_config())"`
+
 Tests on my iMac with macOS 10.9.5 don't show any significant improvement.
 
 
