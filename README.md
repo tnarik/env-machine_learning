@@ -21,6 +21,40 @@ In some cases, specific libraries my require adhoc installation, please review t
 
 ## Notes about Libraries and Tools
 
+### XGBoost
+
+The `pip` version of XGBoost is using an old compiler for Macos, and it might be prefereable running a manual installation directly from the [github repo](https://github.com/dmlc/xgboost).
+
+On Macos, where a gcc version with OpenMP support should be used to benefit from the multi-threading.
+
+```
+brew install gcc --without-multilib
+git clone --recursive https://github.com/dmlc/xgboost
+export CC=$(which gcc-6)
+export CXX=$(which g++-6)
+cd xgboost; cp make/config.mk ./config.mk
+make clean && make -j4
+cd python-package
+
+# The next step might not be what you want,
+# particularly if you need control on the destination path
+python setup.py install
+```
+
+In some cases (like when using `direnv`), there will be two constraints:
+
+* which version of Python to use
+* the `setup.py` scripts needs to be executed from its own directory
+
+One way of solving this is from the virtualenv environment itself is running:
+
+```
+python -c "subprocess.Popen(['python','setup.py', 'install'], cwd='/tmp/xgboost/python-package')"
+```
+
+, where `/tmp/xgboost/python-package` should be replaced by the directory containing `setup.py`.
+
+
 ### Numpy
 
 #### OpenBLAS (macOS)
