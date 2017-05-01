@@ -35,8 +35,7 @@ export CXX=$(which g++-6)
 cd xgboost; cp make/config.mk ./config.mk
 make clean && make -j4
 cd python-package
-
-# The next step might not be what you want,
+# The next step might NOT be what you want,
 # particularly if you need control on the destination path
 python setup.py install
 ```
@@ -49,7 +48,7 @@ In some cases (like when using `direnv`), there will be two constraints:
 One way of solving this is from the virtualenv environment itself is running:
 
 ```
-python -c "subprocess.Popen(['python','setup.py', 'install'], cwd='/tmp/xgboost/python-package')"
+python -c "import subprocess; subprocess.Popen(['python','setup.py', 'install'], cwd='/tmp/xgboost/python-package')"
 ```
 
 , where `/tmp/xgboost/python-package` should be replaced by the directory containing `setup.py`.
