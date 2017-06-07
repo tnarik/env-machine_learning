@@ -35,6 +35,7 @@ Pillow==4.0.0
 matplotlib==2.0.2
 mplleaflet==0.0.5 # Matplotlib to Leaflet maps
 graphviz==0.5.2 # Requires the installation of graphviz as well (`brew install graphviz`)
+pydot==1.2.3
 
 # To read Excel files
 xlrd==1.0.0
