@@ -21,6 +21,8 @@ In some cases, specific libraries my require adhoc installation, please review t
 
 ## Notes about Libraries and Tools
 
+Please note that this documentation uses GCC 6, but you could equally use GCC 7, which might be more compatible with your setup.
+
 ### XGBoost
 
 The `pip` version of XGBoost is using an old compiler for macOS, and it might be prefereable running a manual installation directly from the [github repo](https://github.com/dmlc/xgboost).
@@ -48,14 +50,25 @@ In some cases (like when using `direnv`), there will be two constraints:
 One way of solving this is from the virtualenv environment itself is running:
 
 ```
+brew install gcc --without-multilib
+git clone --recursive https://github.com/dmlc/xgboost /tmp/xgboost
+export CC=$(which gcc-6)
+export CXX=$(which g++-6)
+cd /tmp/xgboost; cp make/config.mk ./config.mk
+make clean && make -j4
+cd python-package
+```
+, and (from the virtualenv environment),
+
+```
 python -c "import subprocess; subprocess.Popen(['python','setup.py', 'install'], cwd='/tmp/xgboost/python-package')"
 ```
 
-, where `/tmp/xgboost/python-package` should be replaced by the directory containing `setup.py`.
+, where `/tmp/xgboost/python-package` should be replaced by the directory containing `setup.py`. After finishing the installation, you should press `[Enter]`.
 
 ### spaCy
 
-The `pip` version of spaCy is not optimzed for multithreading in macOS. Therefore it is prefereable running a manual installation directly from the [github repo](https://github.com/explosion/spaCy).
+The `pip` version of spaCy is not optimized for multithreading in macOS. Therefore it is prefereable running a manual installation directly from the [github repo](https://github.com/explosion/spaCy).
 
 On macOS, where a gcc version with OpenMP support should be used to benefit from the multi-threading.
 
@@ -64,7 +77,6 @@ brew install gcc --without-multilib
 git clone --recursive https://github.com/explosion/spaCy
 export CC=$(which gcc-6)
 export CXX=$(which g++-6)
-cd spaCy
 # The next step might NOT be what you want,
 # particularly if you need control on the destination path
 python setup.py install
@@ -78,10 +90,18 @@ In some cases (like when using `direnv`), there will be two constraints:
 One way of solving this is from the virtualenv environment itself is running:
 
 ```
+brew install gcc --without-multilib
+git clone --recursive https://github.com/explosion/spaCy /tmp/spaCy
+export CC=$(which gcc-6)
+export CXX=$(which g++-6)
+```
+, and (from the virtualenv environment),
+
+```
 python -c "import subprocess; subprocess.Popen(['python','setup.py', 'install'], cwd='/tmp/spaCy')"
 ```
 
-, where `/tmp/spaCy` should be replaced by the directory containing `setup.py`.
+, where `/tmp/spaCy` should be replaced by the directory containing `setup.py`. After finishing the installation, you should press `[Enter]`.
 
 
 
