@@ -41,6 +41,8 @@ mplleaflet==0.0.5 # Matplotlib to Leaflet maps
 graphviz==0.5.2 # Requires the installation of graphviz as well (`brew install graphviz`)
 pydot==1.2.3
 
+TPOT==0.8.3 # A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programmin
+
 # To read Excel files
 xlrd==1.0.0
 # HTML processing
