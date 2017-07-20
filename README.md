@@ -169,7 +169,22 @@ An example of the excution would be:
 jupyter nbconvert --to=pdf --execute <notebook>
 ```
 
+#### Use from other computers
 
+You might have a central server you want to use for your runs, while using a different computer to interface with that server.
+
+One way of doing this is creating a configuration file which allows for such a setting. The simplest way is:
+
+* Create an empty file `.jupyter/jupyter_notebook_config.py`.
+* Add the following content into that file:
+
+  ```
+  c.NotebookApp.ip = '*'  # serve the notebooks locally
+c.NotebookApp.open_browser = False  # do not open a browser window by default when using notebooks
+c.NotebookApp.password = 'sha1:b02b20954610:599cae086531cbc8e268c88348bc4e6913779103'
+  ```
+
+**Note :** The password comes from the execution of `python -c 'from IPython.lib import passwd; print(passwd())'`.
 
 ## Issues
 
