@@ -136,6 +136,16 @@ This would be needed, for instance, on macOS.
 echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 ```
 
+### PyAudio
+
+This is a wrapper library for PortAudio, used when `SpeechRecognition` acesses the microphone.
+
+```
+brew install portaudio
+```
+
+
+
 ### Jupyter
 
 #### Extensions
