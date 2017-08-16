@@ -144,7 +144,13 @@ This is a wrapper library for PortAudio, used when `SpeechRecognition` acesses t
 brew install portaudio
 ```
 
+### PocketSphinx
 
+It needs `swig`, which might not be installed on your system.
+
+```
+brew install swig
+```
 
 ### Jupyter
 
