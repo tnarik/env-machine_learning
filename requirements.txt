@@ -44,6 +44,8 @@ matplotlib==2.0.2
 mplleaflet==0.0.5 # Matplotlib to Leaflet maps
 graphviz==0.5.2 # Requires the installation of graphviz as well (`brew install graphviz`)
 pydot==1.2.3
+# Installation of basemap requires a workaround on zsh: SHELL=/bin/bash pip install https://github.com/matplotlib/basemap/archive/v1.1.0.tar.gz
+# It requires the previous installation of geos
 
 TPOT==0.8.3 # A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programmin
 
