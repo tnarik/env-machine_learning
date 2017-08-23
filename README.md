@@ -2,6 +2,8 @@
 
 This environment includes **Pandas**, **Numpy** and other Open Source Machine Learning/Data Science libraries, to support the Python based machine learning courses and projects.
 
+It started initially as a `Direnv` oriented environment, but I am in the process of evaluating `Conda` (via the `Anaconda` distribution) as I identified a couple of benefits in doing that.
+
 
 ## Courses and projects
 
