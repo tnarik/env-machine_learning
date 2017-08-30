@@ -4,6 +4,12 @@ This environment includes **Pandas**, **Numpy** and other Open Source Machine Le
 
 It started initially as a `Direnv` oriented environment, but I am in the process of evaluating `Conda` (via the `Anaconda` distribution) as I identified a couple of benefits in doing that.
 
+As a quick "usage guide":
+
+```
+conda env create -n new_env --file environment.yaml
+conda env remove -n new
+```
 
 ## Courses and projects
 
