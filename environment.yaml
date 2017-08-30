@@ -48,6 +48,8 @@ dependencies:
   - pylzma==0.4.8
   - pyro4==4.57 # For distributed LSI/LDA
   - python-levenshtein==0.12.0
+  - https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py3-none-any.whl #- tensorflow==1.1.0
+  #- https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.1.0-py3-none-any.whl
   - quiver-engine==0.1.4.1.4
   - rumps==0.2.2
   - scikit-image==0.13.0
@@ -58,8 +60,6 @@ dependencies:
   - spacy==1.8.2
   - speechrecognition==3.7.1 # Wrapper
   - tabulate==0.7.7
-  #- https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py3-none-any.whl #- tensorflow==1.1.0
-  - https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.1.0-py3-none-any.whl
   - tpot==0.8.3 # A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming
   - tqdm==4.15.0
   - tweepy==3.5.0
