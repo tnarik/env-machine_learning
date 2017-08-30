@@ -7,6 +7,7 @@ It started initially as a `Direnv` oriented environment, but I am in the process
 As a quick "usage guide":
 
 ```
+brew cask install anaconda 
 conda env create -n new_env --file environment.yaml
 conda env remove -n new
 ```
