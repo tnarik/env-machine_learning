@@ -12,7 +12,7 @@ pylzma==0.4.8
 
 # Deep learning
 h5py==2.7.0 # Load/save model dependency for Keras
-Keras==2.0.4
+Keras==2.0.8
 quiver_engine==0.1.4.1.4
 ## TensorFlow
 #https://storage.googleapis.com/tensorflow/mac/cpu/protobuf-3.2.0-cp35-none-macosx_10_11_x86_64.whl # Is meant to make Tensorflow faster
