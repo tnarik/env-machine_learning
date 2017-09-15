@@ -12,6 +12,15 @@ conda env create -n new_env --file environment.yaml
 conda env remove -n new
 ```
 
+## eGPU
+
+The environment is currently using an external GPU via a Node Akitio Thunderbolt 3 box and an Nvidia GTX 1080 Ti. Due to macOS versions and hardware, the whole setup runs on a MacBook Pro 2016 with Touch Bar and macOS 10.12.* (Sierra).
+
+* The setup doesn't support hotplug. That means that the laptop is set in non-sleep mode (via Caffeine). Also, the eGPU gets plugged in and switched on before turning on the laptop. The laptop is switched off first.
+* There was an issue with visual artifacts on screen. It seems disabling the *Automatic graphics switching* preferences in the *Energy Saver* system preferences section resolves this by sticking to the best card.
+
+To access the system from other computers (and benefit from more screen real estate) the Jupyter configuration allows access from other systems in the network. To expose this outside, the recommendation is using ngrok (access speed is penalized due to tunneling though).
+
 ## Courses and projects
 
 Course notebooks, code and documentation are to be tracked in their own repository. To simplify reusability (and because of the way `Direnv` works, which doesn't sit well with Dropbox and sharing the environment across multiple computers with different versions of macOS), the environment is not shared (it is synchronized via GIT), while the course can be if so wanted.
@@ -31,6 +40,12 @@ In some cases, specific libraries my require adhoc installation, please review t
 ## Notes about Libraries and Tools
 
 Please note that this documentation uses GCC 6, but you could equally use GCC 7, which might be more compatible with your setup.
+
+### TensorFlow / TensorBoard
+
+TensorFlow installation on macOS requires `pip install --upgrade https://storage.googleapis.com/tensorflow/mac/gpu/tensorflow_gpu-1.1.0-py3-none-any.whl` if supporting GPU. Official support for GPUs on macOS has been dropped in the latest versions, which is why my installation sticks to `1.1.0`.
+
+TensorBoard might require installation via `pip install tensorflow-tensorbard==0.1.2` due to some issues with the regex filters for runs. More recent versions require TensorFlow `1.3.x`, which is not supported on macOS GPU (and therefore not practical with my setup).
 
 ### XGBoost
 

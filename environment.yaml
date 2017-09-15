@@ -31,7 +31,7 @@ dependencies:
   - joblib==0.10.3
   - jupyter==1.0.0
   - jupyter-contrib-nbextensions==0.2.8
-  - keras==2.0.4
+  - keras==2.0.8
   - schedule==0.4.*
   - loremipsum==1.0.5
   - matplotlib==2.0.2
