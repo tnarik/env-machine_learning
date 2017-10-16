@@ -19,7 +19,9 @@ The environment is currently using an external GPU via a Node Akitio Thunderbolt
 * The setup doesn't support hotplug. That means that the laptop is set in non-sleep mode (via Caffeine). Also, the eGPU gets plugged in and switched on before turning on the laptop. The laptop is switched off first.
 * There was an issue with visual artifacts on screen. It seems disabling the *Automatic graphics switching* preferences in the *Energy Saver* system preferences section resolves this by sticking to the best card.
 
-To access the system from other computers (and benefit from more screen real estate) the Jupyter configuration allows access from other systems in the network. To expose this outside, the recommendation is using ngrok (access speed is penalized due to tunneling though).
+To access the system from other computers (and benefit from more screen real estate) the Jupyter configuration allows access from other systems in the network. To expose this outside, the recommendation is using `ngrok` (access speed is penalized due to tunneling though).
+
+The set up can also work without the eGPU connected, by setting `CUDA_VISIBLE_DEVICES=''` or `'-1'`, but this behaviour is not consistent and running the neural networks can fail sometimes due to issues loading the driver. This is quite non-deterministic and there is a better option, consisting on using an installation of TensorFlow without GPU support. Note as well that support for TensorFlow with GPU on macOS ceased to be provided on version 1.2.
 
 ## Courses and projects
 
@@ -189,6 +191,7 @@ With this they will be available via the internal extension configuration tab. O
 ```
 jupyter nbextension enable hide_header/main
 jupyter nbextension enable freeze/main
+jupyter nbextension execute_time/ExecuteTime
 ```
 
 #### To find out which Python kernels are available in `Jupyter`
