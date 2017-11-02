@@ -42,6 +42,7 @@ dependencies:
   - loremipsum==1.0.5
   - matplotlib==2.0.2
   - mlxtend==0.5.1
+  - mpld3==0.3
   - mplleaflet==0.0.5 # Matplotlib to Leaflet maps
   - nltk==3.2.4
   - nose==1.3.7 # For checking of estimators
