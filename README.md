@@ -178,6 +178,14 @@ It needs `swig`, which might not be installed on your system.
 brew install swig
 ```
 
+### Bjoern
+
+It needs `libev`, which might not be installed on your system.
+
+```
+brew install libev
+```
+
 ### Jupyter
 
 #### Extensions

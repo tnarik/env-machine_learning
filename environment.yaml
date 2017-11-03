@@ -22,6 +22,7 @@ dependencies:
 - pip:
   - bayesian-optimization==0.4.0
   - beautifulsoup4==4.5.3
+  - bjoern==2.0.1
   - bokeh==0.12.10
   - celery[redis]==4.0.2
   - cython==0.25.2
