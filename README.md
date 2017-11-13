@@ -105,6 +105,7 @@ export CC=$(which gcc-6)
 export CXX=$(which g++-6)
 # The next step might NOT be what you want,
 # particularly if you need control on the destination path
+cd spaCy
 python setup.py install
 ```
 
