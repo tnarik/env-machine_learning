@@ -5,6 +5,9 @@ numpy==1.13.0
 pandas==0.20.1
 scipy==0.19.0
 
+
+Faker==0.8.11 # For testing and sample generation
+
 scikit-learn==0.18.1
 nose==1.3.7 # For checking of estimators
 
