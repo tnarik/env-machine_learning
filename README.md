@@ -200,7 +200,7 @@ With this they will be available via the internal extension configuration tab. O
 ```
 jupyter nbextension enable hide_header/main
 jupyter nbextension enable freeze/main
-jupyter nbextension execute_time/ExecuteTime
+jupyter nbextension enable execute_time/ExecuteTime
 ```
 
 #### To find out which Python kernels are available in `Jupyter`
