@@ -12,6 +12,10 @@ conda env create -n new_env --file environment.yaml
 conda env remove -n new
 ```
 
+To update and existing environment, you can run `conda env update -f environment.yaml`.
+
+Some packages (such as Jupyter) are *meta-packages* and updates might need to be forced via `pip install {package} -U` if trying to update an existing environment.
+
 ## eGPU
 
 The environment is currently using an external GPU via a Node Akitio Thunderbolt 3 box and an Nvidia GTX 1080 Ti. Due to macOS versions and hardware, the whole setup runs on a MacBook Pro 2016 with Touch Bar and macOS 10.12.* (Sierra).
@@ -38,6 +42,8 @@ When using `direnv`, the virtualenv environment is setup and activated upon acce
 If the containing folder gets moved, it is better to throw away (delete) the `.direnv` folder as some paths are configured statically during the automated setup.
 
 In some cases, specific libraries my require adhoc installation, please review the notes below.
+
+The current setup uses `conda`, and the idea is that any project can reuse that `conda` environment given that it gets activated correctly, regardless of where do those projects sit. Just check the provided `.envrc`, drop it on your project folder and execute `direnv allow .` from the project to ensure activation.
 
 ## Notes about Libraries and Tools
 
