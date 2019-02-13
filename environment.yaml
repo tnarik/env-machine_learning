@@ -5,6 +5,10 @@ channels:
 dependencies:
   - pymc3=3.2=py36_0 #conda-forge
   - google-api-python-client=1.6.4=py_0 #conda-forge
+  - basemap=1.0.7 # Installation of basemap required a workaround on zsh/pip: SHELL=/bin/bash pip install https://github.com/matplotlib/basemap/archive/v1.1.0.tar.gz
+  - datashader=0.6.9
+  - folium=0.7.0=py_0 #conda-forge
+  - geopandas=0.4.0=py_1 #conda-forge
   - pandas=0.24.0=py36h0a44026_0
   - pandas-datareader=0.5.0=py36_0
   - pytables=3.4.2=np113py36_0
@@ -19,7 +23,6 @@ dependencies:
   - wheel=0.29.0=py36_0
   - xz=5.2.3=0
   - zlib=1.2.11=0
-  - basemap=1.0.7 # Installation of basemap required a workaround on zsh/pip: SHELL=/bin/bash pip install https://github.com/matplotlib/basemap/archive/v1.1.0.tar.gz
   - pip:
     - aiohttp==2.3.2
     - aiohttp-cors==0.5.3
@@ -77,6 +80,7 @@ dependencies:
     - tpot==0.8.3 # A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming
     - tqdm==4.15.0
     - tweepy==3.5.0
+    - vincent==0.4.4
     - xlrd==1.0.0
 prefix: /usr/local/anaconda3/envs/machine_learning
   
