@@ -56,6 +56,7 @@ dependencies:
     - nltk==3.2.4
     - nose==1.3.7 # For checking of estimators
     - numpy==1.15.*
+    - piexif==1.1.2
     - pillow==4.2.1
     - pocketsphinx==0.1.3 # Offline speech recognition engine
     - pyaudio==0.2.11 # Microphone access (PortAudio bindings)
