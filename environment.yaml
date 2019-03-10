@@ -41,6 +41,7 @@ dependencies:
     - gevent==1.2.2
     - graphviz==0.5.2 # Requires the installation of graphviz as well (`brew install graphviz`)
     - gunicorn==19.6.0
+    - hachoir==3.0a3
     - h5py==2.7.0 # Load/save model dependency for Keras
     - jinja2==2.10
     - joblib==0.10.3
