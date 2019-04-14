@@ -36,7 +36,7 @@ dependencies:
     - Faker==0.8.11
     - flask==0.12.2
     - fuzzywuzzy==0.15.0
-    - gdal==2.1.3 # The same version as your GDAL installation (for a macOS with brew at least)
+    #- gdal==2.4.0 # The same version as your GDAL installation (for a macOS with brew at least)
     - gensim==2.1.0
     - geopandas==0.4.0
     - gevent==1.2.2
@@ -60,7 +60,7 @@ dependencies:
     - numpy==1.15.*
     - piexif==1.1.2
     - pillow==4.2.1
-    - pocketsphinx==0.1.3 # Offline speech recognition engine
+    - pocketsphinx==0.1.15 # Offline speech recognition engine
     - pyaudio==0.2.11 # Microphone access (PortAudio bindings)
     - pydot==1.2.3
     - pyinstaller==3.4 # Version in Conda is 3.3.1
