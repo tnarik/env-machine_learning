@@ -221,7 +221,7 @@ jupyter nbextension enable execute_time/ExecuteTime
 
 `jupyter kernelspec list`
 
-#### To execute `Jupyter` notebooks non-interactively (and generated documents)
+#### To execute `Jupyter` notebooks non-interactively (and generate documents)
 
 * To execute: `--ExecutePreprocessor.enabled=True`
 , or just `--execute`.

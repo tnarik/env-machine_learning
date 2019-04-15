@@ -47,7 +47,7 @@ dependencies:
     - jinja2==2.10
     - joblib==0.10.3
     - jupyter==1.0.0
-    - jupyter-contrib-nbextensions==0.2.8
+    - jupyter-contrib-nbextensions==0.5.1
     - keras==2.0.8
     - schedule==0.4.*
     - loremipsum==1.0.5
