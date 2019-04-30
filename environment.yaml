@@ -77,9 +77,12 @@ dependencies:
     - seaborn==0.7.1
     - selenium==3.7.0
     - slackclient==1.0.5
+    - snakeviz==2.0.0
     - spacy==2.0.18
     - speechrecognition==3.7.1 # Wrapper
     - tabulate==0.7.7
+    - tox==3.9.0
+    - tox-conda==0.2.0
     - tpot==0.8.3 # A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming
     - tqdm==4.15.0
     - tweepy==3.5.0
