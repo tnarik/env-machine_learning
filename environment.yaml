@@ -36,7 +36,7 @@ dependencies:
     - Faker==0.8.11
     - flask==0.12.2
     - fuzzywuzzy==0.15.0
-    #- gdal==2.4.0 # The same version as your GDAL installation (for a macOS with brew at least)
+    - gdal==2.4.0 # The same version as your GDAL installation (for a macOS with brew at least)
     - gensim==2.1.0
     - geopandas==0.4.0
     - gevent==1.2.2
