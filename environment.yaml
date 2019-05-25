@@ -88,5 +88,6 @@ dependencies:
     - tweepy==3.5.0
     - vincent==0.4.4
     - xlrd==1.0.0
+    - yaspin==0.14.3
 prefix: /usr/local/anaconda3/envs/machine_learning
  
