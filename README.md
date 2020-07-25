@@ -16,6 +16,10 @@ To update and existing environment, you can run `conda env update -f environment
 
 Some packages (such as Jupyter) are *meta-packages* and updates might need to be forced via `pip install {package} -U` if trying to update an existing environment.
 
+A nice and convinient way of generating the YAML (since 2019) without versions (but also without `pip` dependencies) is:
+
+`conda env export --from-history > environment.yaml`
+
 ## eGPU
 
 The environment is currently using an external GPU via a Node Akitio Thunderbolt 3 box and an Nvidia GTX 1080 Ti. Due to macOS versions and hardware, the whole setup runs on a MacBook Pro 2016 with Touch Bar and macOS 10.12.* (Sierra).

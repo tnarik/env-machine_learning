@@ -1,0 +1,95 @@
+name: machine_learning
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pymc3
+  - google-api-python-client
+  - basemap
+  - folium
+  - pandas-datareader
+  - pip
+  - readline
+  - wheel
+  - python-magic
+  - tk
+  - xz
+  - numpy
+  - zlib
+  - python=3.7
+  - pandas
+  - setuptools
+  - openssl
+  - jinja2
+  - sqlite
+  - datashader
+  - pillow
+  - statsmodels
+  - pytables
+  - scipy
+  - h5py
+  - bokeh
+  - matplotlib
+  - tqdm
+  - scikit-image
+  - tabulate
+  - faker
+  - nose
+  - vincent
+  - cython
+  - gensim
+  - speechrecognition
+  - tox-conda
+  - seaborn
+  - gunicorn
+  - nltk
+  - colorama
+  - gevent
+  - piexif
+  - mlxtend
+  - tpot
+  - tweepy
+  - fuzzywuzzy
+  - snakeviz
+  - mpld3
+  - flask
+  - scikit-learn
+  - aiohttp
+  - tox
+  - xlrd
+  - graphviz
+  - aiohttp-cors
+  - selenium
+  - slackclient
+  - celery
+  - beautifulsoup4
+  - geopandas
+  - gdal
+  - mplleaflet
+  - spacy
+  - bayesian-optimization
+  - bjoern
+  - keras
+  - pyinstaller
+  - pyro4
+  - jupyter
+  - schedule
+  - joblib
+  - pyaudio
+  - pydot
+  - python-levenshtein
+  - quiver_engine
+  - google-auth
+  - pip:
+    - hachoir
+    - jupyter-contrib-nbextensions
+    - loremipsum
+    - pocketsphinx
+    - pylzma
+    - rumps
+    - yaspin
+    - oauth2client # Even if it is deprecated
+    #- https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py3-none-any.whl#- tensorflow==1.1.0
+
+prefix: /usr/local/anaconda3/envs/machine_learning
+ 
