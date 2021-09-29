@@ -24,7 +24,7 @@ bayesian-optimization==0.4.0
 mlxtend==0.5.1
 
 # NLP
-nltk==3.2.4
+nltk==3.6.3
 spacy==1.8.2
 Pyro4==4.57 # For distributed LSI/LDA
 gensim==2.1.0
