@@ -56,7 +56,7 @@ BeautifulSoup4==4.5.3
 
 
 # For the deploying Python models as an API workshop
-joblib==0.10.3
+joblib==1.2.0
 Flask==0.12.2
 gunicorn==19.6.0
 gevent==1.2.2
